@@ -5,13 +5,17 @@ import (
 	"math/rand"
 )
 
+const (
+	Result = 30
+	K1     = 1
+	K2     = 2
+	K3     = 3
+	K4     = 4
+	K5     = 5
+)
+
 func main() {
-	Result := 30
-	K1 := 1
-	K2 := 2
-	K3 := 3
-	K4 := 4
-	K5 := 5
+
 	genomes := make(map[int]*Genome, 50)
 	for i := 0; i < 50; i++ {
 		genomes[i] = NewGenerateGenome(Result)
